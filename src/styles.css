@@ -22,12 +22,21 @@ h1 {
   color: #272044;
 }
 
-form {
-  padding: 30px;
+.form-wrapper {
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  border-radius: 10px;
-  display: flex;
   margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+
+form {
+  display: flex;
+}
+
+.hint {
+  font-size: 8px;
+  line-height: 24px;
+  opacity: 0.6;
 }
 
 .instructions {
@@ -62,6 +71,10 @@ form {
   text-align: center;
   max-width: 80%;
   margin: 0 auto;
+}
+
+.hidden {
+  display: none;
 }
 
 footer {

@@ -16,6 +16,11 @@ function generateQuote(event) {
     "You are a unique quote-expert that will answer in the language being handed to you. Your mission is to generate an either short or long quote. Make sure to follow the user instructions.";
   let prompt = `User instructions: Generate a quote about ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let quoteElement = document.querySelector("#quote");
+  quoteElement.classList.remove("hidden");
+  quoteElement.innerHTML = `⏳ Generating a quote about ${instructionsInput.value}...`;
+
   axios.get(apiUrl).then(displayQuote);
 }
 

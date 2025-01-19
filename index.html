@@ -15,32 +15,27 @@
       </header>
 
       <main>
-        <form id="quote-generator-form">
-          <input
-            type="text"
-            placeholder="Enter a topic"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="quote" id="quote"></div>
+        <div class="form-wrapper">
+          <form id="quote-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a topic"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <small class="hint">
+            i.e: "something short about trees", "love", "something cute about
+            summer in Spanish" etc.</small
+          >
+        </div>
+
+        <div class="quote hidden" id="quote"></div>
       </main>
       <footer>
         This AI-project was coded with 🤍 by
-        <a href="https://github.com/lilumoen" target="_blank">Lill Moen</a>,
-        <br />
-        is open-sourced on
-        <a href="https://github.com/lilumoen/quote-generator" target="_blank"
-          >Github</a
-        >
-        and hosted on
-        <a href="https://quotesforfun.netlify.app/" target="_blank">Netlify</a>.
-      </footer>
-    </div>
-    <script src="src/index.js"></script>
-  </body>
-</html>
+        <a href="https://github.com/lil
